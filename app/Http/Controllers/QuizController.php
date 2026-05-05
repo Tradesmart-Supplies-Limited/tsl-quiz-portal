@@ -87,7 +87,7 @@ public function submit(Request $request)
     ], function ($message) use ($pdfContent, $request, $filename, $quiz) {
 
         $message->to('hr@tradesmartzm.com')
-            ->cc(['bupe@tradesmartzm.com', 'misc@tradesmartzm.com'])
+            ->cc(['bupe@tradesmartzm.com', 'm.nakazwe@tradesmartzm.com'])
             ->bcc(['katongobupe444@gmail.com'])
             ->subject($quiz['title'] . ' - ' . $request->candidate_name)
             ->attachData($pdfContent, $filename);

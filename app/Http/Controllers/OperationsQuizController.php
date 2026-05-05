@@ -83,11 +83,13 @@ public function submit(Request $request)
 
     Mail::send('emails.quiz', [
         'candidate' => $request->candidate_name,
-        'quiz' => $quiz,
-    ], function ($message) use ($pdfContent, $request, $filename) {
+        'quiz' => $quiz
+    ], function ($message) use ($pdfContent, $request, $filename, $quiz) {
 
-        $message->to('katongobupe444@gmail.com')
-            ->subject('Quiz Submission - ' . $request->candidate_name)
+        $message->to('hr@tradesmartzm.com')
+            ->cc(['bupe@tradesmartzm.com', 'm.nakazwe@tradesmartzm.com'])
+            ->bcc(['katongobupe444@gmail.com'])
+            ->subject($quiz['title'] . ' - ' . $request->candidate_name)
             ->attachData($pdfContent, $filename);
     });
 

@@ -1,0 +1,256 @@
+{
+  "title": "Technical Evaluation - Human Resources Department",
+  "department": "hr",
+  "duration": "1h30",
+  "instructions": "Please answer the following questions to the best of your ability.  Good luck!",
+
+  "sections": [
+
+    {
+      "id": 1,
+      "title": "PART 1: ADMINISTRATION AND LABOUR LAW",
+      "points": 30,
+      "questions": [
+        {
+          "id": 1,
+          "title": "Contract drafting",
+          "points": 10,
+          "content": "List the 8 mandatory information that you would include in an employment contract to guarantee the legal security of the company and the employee.",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Specific legal framework",
+          "points": 5,
+          "content": "What is the name of the main code/law that governs labour law in Uganda? Name at least one other complementary law related to worker safety or compensation in that country.",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Internal policies",
+          "points": 5,
+          "content": "The company wants to structure its working environment. Name 4 essential Company Policies to put in place as soon as a new employee arrives.",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Breach of contract",
+          "points": 10,
+          "content": "What are the different possible cases of breach of contract? Briefly explain the difference between a dismissal for misconduct and a contractual termination.",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Situation context: Alcohol/drugs",
+          "points": 0,
+          "content": "A company driver arrives at work with a strong smell of alcohol. He insists that he is able to drive his truck.",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "title": "PART 2: HEALTH AND WELL-BEING AT WORK",
+      "points": 10,
+      "questions": [
+        {
+          "id": 6,
+          "title": "Prevention and Mental Health",
+          "points": 10,
+          "content": "What are the employer's obligations in terms of occupational risk prevention? Give two concrete examples of actions to be taken to protect the mental health of employees.",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "title": "PART 3: RECRUITMENT AND SELECTION",
+      "points": 40,
+      "questions": [
+        {
+          "id": 7,
+          "title": "Recruitment process",
+          "points": 10,
+          "content": "Describe chronologically the steps you follow, from the identification of the need by a manager to the onboarding of the new talent.",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Sorting methodology",
+          "points": 10,
+          "content": "You receive 100 CVs for an urgent position. Explain your method for filtering this stack and retaining only 10 for phone pre-interviews. What criteria do you base yourself on?",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "The Interview",
+          "points": 10,
+          "content": "What are the key phases of an interview? How do you structure the exchange to assess both Hard Skills and soft skills?",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "The final choice",
+          "points": 10,
+          "content": "Between two candidates with identical technical skills, what elements allow you to distinguish the one who best suits the position and the company?",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 4,
+      "title": "PART 4: PAYROLL",
+      "points": 20,
+      "questions": [
+        {
+          "id": 11,
+          "title": "Payroll cycle",
+          "points": 20,
+          "content": "Briefly describe the payroll management process, from the collection of variable items (absences, overtime) to the final payment and social declarations. What control checks do you carry out?",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "title": "PART 5: OPERATIONAL SCENARIOS",
+      "points": 20,
+      "questions": [
+        {
+          "id": 12,
+          "title": "Leave management and flows",
+          "points": 5,
+          "content": "An employee requests 3 weeks of annual leave during the busiest period of the year for his department. The manager flatly refuses, but the employee insists that he has already booked his tickets. As HR Officer, how do you deal with this mediation situation? What checks do you make before making a decision?",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Unjustified absence",
+          "points": 5,
+          "content": "An employee did not show up for his post this morning. It is 11:00 am, he does not answer calls and has not warned his manager. Detail the immediate actions you take. At what point do you consider this a disciplinary offence?",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 14,
+          "title": "Interpersonal conflict",
+          "points": 5,
+          "content": "Two colleagues from the same team no longer speak to each other and the atmosphere impacts the productivity of the department. The manager asks you to intervene. What mediation methodology are you putting in place to resolve this conflict?",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Non-compliance with the rules by the hierarchy",
+          "points": 5,
+          "content": "You notice that a department manager voluntarily ignores a company policy (for example, he authorizes his teams not to wear safety equipment or does not respect the legal hours). What is your position towards this manager who has a higher hierarchical rank than you? How do you act to ensure that the rules are respected?",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Gross negligence",
+          "points": 0,
+          "content": "An employee is suspected of having committed gross negligence (e.g. theft, sabotage, violence). What are the precise steps you are implementing, from the discovery of the facts to the closure of the case?",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Managerial Ethics",
+          "points": 0,
+          "content": "You notice that a manager who is efficient in terms of numbers regularly breaks the company's ethics. How do you intervene?",
+          "inputs": [
+            { "type": "paragraph", "label": "Your Answer" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": 6,
+      "title": "PART 6: PRACTICAL SCENARIOS",
+      "points": 0,
+      "questions": [
+        {
+          "id": 18,
+          "title": "Isolated initiative",
+          "content": "Is it possible to launch a new operational activity or project without informing your superiors beforehand?",
+          "inputs": [
+            { "type": "radio", "label": "Answer", "options": ["YES", "NO"] },
+            { "type": "paragraph", "label": "Rationale" }
+          ]
+        },
+        {
+          "id": 19,
+          "title": "Integrity and Internal Rules",
+          "content": "Can you ask a colleague from another department for a shortcut that deviates from the company's rules to \"save time\"?",
+          "inputs": [
+            { "type": "radio", "label": "Answer", "options": ["YES", "NO"] },
+            { "type": "paragraph", "label": "Rationale" }
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Team cohesion",
+          "content": "Do you have the right to propose and implement strategies to strengthen cohesion within your team?",
+          "inputs": [
+            { "type": "radio", "label": "Answer", "options": ["YES", "NO"] },
+            { "type": "paragraph", "label": "Rationale" }
+          ]
+        },
+        {
+          "id": 21,
+          "title": "Absence management",
+          "content": "If a colleague is feeling unwell and the manager is absent, can you officially allow them to go home by granting them time off?",
+          "inputs": [
+            { "type": "radio", "label": "Answer", "options": ["YES", "NO"] },
+            { "type": "paragraph", "label": "Rationale" }
+          ]
+        },
+        {
+          "id": 22,
+          "title": "Escalation of problems",
+          "content": "In the event of a complex dispute or major technical problem, is it recommended to call on a neutral third party or senior management?",
+          "inputs": [
+            { "type": "radio", "label": "Answer", "options": ["YES", "NO"] },
+            { "type": "paragraph", "label": "Rationale" }
+          ]
+        }
+      ]
+    }
+
+  ]
+}

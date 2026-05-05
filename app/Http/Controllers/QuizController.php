@@ -47,7 +47,7 @@ private function parseDuration($duration)
     public function show()
 {
     $quiz = json_decode(
-        file_get_contents(storage_path('app/hq_hr_quiz.json')), 
+        file_get_contents(resource_path('data/hr.json')),
         true
     );
 
@@ -63,7 +63,7 @@ public function submit(Request $request)
     $answers = $request->answers;
 
     $quiz = json_decode(
-        file_get_contents(storage_path('app/hq_hr_quiz.json')),
+        file_get_contents(resource_path('data/hr.json')),
         true
     );
 

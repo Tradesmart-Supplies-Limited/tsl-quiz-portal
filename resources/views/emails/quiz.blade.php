@@ -26,7 +26,7 @@
             <td style="padding:25px;">
 
                 <p style="margin:0 0 15px; color:#374151;">
-                    A candidate has completed the HR Technical Evaluation.
+                    A candidate has completed the {{ $quiz['title'] }}.
                 </p>
 
                 <!-- INFO BOX -->
@@ -45,13 +45,6 @@
                     The candidate's responses are attached as a PDF for review, printing, and marking.
                 </p>
 
-                <!-- CTA -->
-                <div style="margin-top:20px;">
-                    <span style="display:inline-block; padding:10px 15px; background:#2563eb; color:#ffffff; border-radius:6px; font-size:13px;">
-                        See Attachment
-                    </span>
-                </div>
-
             </td>
         </tr>
 
@@ -59,7 +52,7 @@
         <tr>
             <td style="background:#f9fafb; padding:15px; text-align:center; font-size:12px; color:#6b7280;">
                 This is an automated message from the Quiz Portal.<br>
-                © {{ date('Y') }} Your Company. All rights reserved.
+                © {{ date('Y') }} Tradesmart Supplies Limited . All rights reserved.
             </td>
         </tr>
 

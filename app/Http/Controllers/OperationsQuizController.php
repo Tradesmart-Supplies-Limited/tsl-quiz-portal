@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Mail;
 use PDF;
 
 
-class QuizController extends Controller
+class OperationsQuizController extends Controller
 {
 
 private function parseDuration($duration)
@@ -47,7 +47,7 @@ private function parseDuration($duration)
     public function show()
 {
     $quiz = json_decode(
-        file_get_contents(storage_path('app/hq_hr_quiz.json')), 
+        file_get_contents(storage_path('app/hq_operations_quiz.json')), 
         true
     );
 
@@ -63,7 +63,7 @@ public function submit(Request $request)
     $answers = $request->answers;
 
     $quiz = json_decode(
-        file_get_contents(storage_path('app/hq_hr_quiz.json')),
+        file_get_contents(storage_path('app/hq_operations_quiz.json')),
         true
     );
 
@@ -83,13 +83,11 @@ public function submit(Request $request)
 
     Mail::send('emails.quiz', [
         'candidate' => $request->candidate_name,
-        'quiz' => $quiz
-    ], function ($message) use ($pdfContent, $request, $filename, $quiz) {
+        'quiz' => $quiz,
+    ], function ($message) use ($pdfContent, $request, $filename) {
 
-        $message->to('hr@tradesmartzm.com')
-            ->cc(['bupe@tradesmartzm.com', 'misc@tradesmartzm.com'])
-            ->bcc(['katongobupe444@gmail.com'])
-            ->subject($quiz['title'] . ' - ' . $request->candidate_name)
+        $message->to('katongobupe444@gmail.com')
+            ->subject('Quiz Submission - ' . $request->candidate_name)
             ->attachData($pdfContent, $filename);
     });
 

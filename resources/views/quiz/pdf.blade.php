@@ -24,7 +24,7 @@
         left: 0;
         right: 0;
         height: 80px;
-        border-bottom: 2px solid #e5e7eb;
+        /* border-bottom: 2px solid #e5e7eb; */
         padding: 10px 20px;
     }
 
@@ -129,11 +129,11 @@
 
     <!-- HEADER -->
     <div class="header">
-        <img src="https://misc.tradesmartzm.com/logo.png" alt="Logo">
+        <img src="{{ public_path('tsl_logo.png') }}" alt="Logo">
 
         <div class="title">
-            <h2>Technical Evaluation</h2>
-            <p>HR Officer Assessment</p>
+            <h2>{{ $quiz['title'] }}</h2>
+            <p>{{ $quiz['department'] }}</p>
         </div>
     </div>
 

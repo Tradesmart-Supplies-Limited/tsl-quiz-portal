@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Technical Evaluation</title>
+    <title>{{ $quiz['title'] }}</title>
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -53,11 +55,55 @@
                 {{ $quiz['title'] }}
             </p>
 
-            <p class="mb-2">
-                <span class="font-semibold text-gray-700">Duration:</span>
-                {{ $quiz['duration'] }}
-            </p>
+            @php
+function formatQuizDuration($duration)
+{
+    // Case 1: plain number (assume minutes)
+    if (is_numeric($duration)) {
+        $minutes = (int) $duration;
+    } else {
+        $duration = strtolower(trim($duration));
 
+        $hours = 0;
+        $minutes = 0;
+
+        // extract hours (e.g. 1h, 2h)
+        if (preg_match('/(\d+)\s*h/', $duration, $h)) {
+            $hours = (int) $h[1];
+        }
+
+        // extract minutes (e.g. 30m in 1h30m or 30m)
+        if (preg_match('/(\d+)\s*m/', $duration, $m)) {
+            $minutes = (int) $m[1];
+        }
+
+        // handle "1h30" (no m)
+        if ($hours > 0 && $minutes === 0 && preg_match('/h(\d+)/', $duration, $hm)) {
+            $minutes = (int) $hm[1];
+        }
+
+        $minutes = ($hours * 60) + $minutes;
+    }
+
+    $h = intdiv($minutes, 60);
+    $m = $minutes % 60;
+
+    if ($h > 0 && $m > 0) {
+        return "{$h}h {$m}m";
+    }
+
+    if ($h > 0) {
+        return "{$h}h";
+    }
+
+    return "{$m} min";
+}
+@endphp
+
+           <p class="mb-2">
+                <span class="font-semibold text-gray-700">Duration:</span>
+                {{ formatQuizDuration($quiz['duration']) }}
+            </p>
             <p>
                 <span class="font-semibold text-gray-700">Instructions:</span><br>
                 <span class="text-gray-600">
@@ -99,7 +145,7 @@
 
     <div id="quizWrapper" class="filter blur-md pointer-events-none transition">
 
-    <form method="POST" action="/quiz/submit" id="quizForm">
+<form method="POST" action="{{ url('/' . $quiz['department'] . '/quiz/submit') }}" id="quizForm">
         @csrf
 
         <!-- Candidate -->
@@ -110,7 +156,7 @@
         </div>
 
         <!-- TABS -->
-        <div class="sticky top-[150px] z-40 bg-white p-4 rounded-2xl shadow mb-6 flex flex-wrap gap-2">
+        <div class="sticky top-[130px] z-40 bg-white p-4 rounded-2xl shadow mb-6 flex flex-wrap gap-2">
             @foreach($sections as $index => $section)
                 <button type="button"
                         onclick="goToSection({{ $index }})"
@@ -153,14 +199,26 @@
                     </label>
 
                     @if($input['type'] == 'radio')
-                        @foreach($input['options'] as $opt)
-                            <label class="flex items-center gap-2 mb-1">
-                                <input type="radio"
-                                       name="answers[{{ $q['id'] }}][{{ $inputIndex }}]"
-                                       value="{{ $opt }}">
-                                {{ $opt }}
-                            </label>
-                        @endforeach
+                        <div class="flex flex-wrap gap-3">
+                            @foreach($input['options'] as $opt)
+                                <label class="cursor-pointer">
+                                    <input type="radio"
+                                        name="answers[{{ $q['id'] }}][{{ $inputIndex }}]"
+                                        value="{{ $opt }}"
+                                        class="hidden peer">
+
+                                    <div class="px-4 py-2 rounded-xl border text-sm font-medium
+                                                bg-white text-gray-700
+                                                hover:bg-blue-50 hover:border-blue-400
+                                                peer-checked:bg-blue-600 peer-checked:text-white peer-checked:border-blue-600
+                                                transition-all duration-200">
+
+                                        {{ $opt }}
+
+                                    </div>
+                                </label>
+                            @endforeach
+                        </div>
 
                     @elseif($input['type'] == 'paragraph')
                         <textarea name="answers[{{ $q['id'] }}][{{ $inputIndex }}]"
@@ -275,8 +333,18 @@ function startTimer() {
             Swal.fire({
                 icon: 'warning',
                 title: 'Time is up!',
-                text: 'Your answers will be submitted automatically.'
+                text: 'Your answers will be submitted automatically.',
+                allowOutsideClick: false,
+                showConfirmButton: false,
+                showCancelButton: false,
+                didOpen: () => Swal.showLoading()
             }).then(() => {
+
+                const wrapper = document.getElementById('quizWrapper');
+                if (wrapper) {
+                    wrapper.classList.add('blur-md', 'pointer-events-none');
+                }
+
                 document.getElementById('quizForm').submit();
             });
         }
@@ -355,7 +423,7 @@ function goToSection(index) {
 //     if (!quizStarted) return;
 
 //     e.preventDefault();
-//     e.returnValue = 'You are taking a quiz. Leaving will lose progress.';
+//     e.returnValue = 'You are taking a quiz. Leaving will lose progress.';`
 // });
 
 // Optional: tab switch warning (NOT auto-submit - safer UX)
@@ -394,9 +462,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 Swal.fire({
                     title: 'Submitting...',
+                    text: 'Please wait while the system submits your answers.',
                     allowOutsideClick: false,
+                    showConfirmButton: false,
+                    showCancelButton: false,
                     didOpen: () => Swal.showLoading()
                 });
+
+                const wrapper = document.getElementById('quizWrapper');
+
+                if (wrapper) {
+                    wrapper.classList.add('blur-md', 'pointer-events-none');
+                }
 
                 form.submit();
             }
@@ -558,6 +635,67 @@ function handleFullscreenExit() {
         }
     }
 }
+</script>
+
+<script>
+// Disable copy, cut, right click
+document.addEventListener('copy', e => {
+    if (quizStarted) e.preventDefault();
+});
+
+document.addEventListener('cut', e => {
+    if (quizStarted) e.preventDefault();
+});
+
+document.addEventListener('contextmenu', e => {
+    if (quizStarted) e.preventDefault();
+});
+</script>
+
+<script>
+// Disable paste in all inputs & textareas
+document.addEventListener('paste', function (e) {
+
+    if (!quizStarted) return;
+
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        e.preventDefault();
+
+        Swal.fire({
+            icon: 'warning',
+            title: 'Paste Disabled',
+            text: 'Pasting answers is not allowed.',
+            timer: 1500,
+            showConfirmButton: false
+        });
+    }
+});
+</script>
+
+<script>
+document.addEventListener('keydown', function(e) {
+
+    if (!quizStarted) return;
+
+    // Ctrl/Cmd + C, V, X, A
+    if ((e.ctrlKey || e.metaKey) && ['c','v','x','a'].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+
+        Swal.fire({
+            icon: 'warning',
+            title: 'Action Blocked',
+            text: 'Copy/Paste actions are disabled during the quiz.',
+            timer: 1500,
+            showConfirmButton: false
+        });
+    }
+});
+</script>
+
+<script>
+document.addEventListener('dragstart', e => {
+    if (quizStarted) e.preventDefault();
+});
 </script>
 
 </body>

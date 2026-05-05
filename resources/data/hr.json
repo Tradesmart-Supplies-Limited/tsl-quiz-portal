@@ -140,7 +140,7 @@
     {
       "id": 5,
       "title": "PART 5: OPERATIONAL SCENARIOS",
-      "points": 20,
+      "points": 30,
       "questions": [
         {
           "id": 12,
@@ -181,7 +181,7 @@
         {
           "id": 16,
           "title": "Gross negligence",
-          "points": 0,
+          "points": 5,
           "content": "An employee is suspected of having committed gross negligence (e.g. theft, sabotage, violence). What are the precise steps you are implementing, from the discovery of the facts to the closure of the case?",
           "inputs": [
             { "type": "paragraph", "label": "Your Answer" }
@@ -190,7 +190,7 @@
         {
           "id": 17,
           "title": "Managerial Ethics",
-          "points": 0,
+          "points": 5,
           "content": "You notice that a manager who is efficient in terms of numbers regularly breaks the company's ethics. How do you intervene?",
           "inputs": [
             { "type": "paragraph", "label": "Your Answer" }

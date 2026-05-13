@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Mail;
 use PDF;
 
 
-class OperationsQuizController extends Controller
+class ItQuizController extends Controller
 {
 
 private function parseDuration($duration)
@@ -47,7 +47,7 @@ private function parseDuration($duration)
     public function show()
 {
     $quiz = json_decode(
-        file_get_contents(resource_path('data/ops.json')),
+        file_get_contents(resource_path('data/it.json')),
         true
     );
 
@@ -63,7 +63,7 @@ public function submit(Request $request)
     $answers = $request->answers;
 
     $quiz = json_decode(
-    file_get_contents(resource_path('data/ops.json')),
+    file_get_contents(resource_path('data/it.json')),
         true
     );
 

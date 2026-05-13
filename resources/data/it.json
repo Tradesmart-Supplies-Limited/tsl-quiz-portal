@@ -1,0 +1,218 @@
+{
+  "title": "Technical Evaluation - Operations Department",
+  "department": "operations",
+  "duration": "1",
+  "instructions": "Please answer the following questions to the best of your ability.  Good luck!",
+  "sections": [
+    {
+      "title": "ENGLISH LANGUAGE",
+      "points": 15,
+      "questions": [
+        {
+          "id": 1,
+          "title": "Grammar",
+          "content": "The shipment ________ at the Port yesterday.",
+          "points": 3,
+          "inputs": [
+            {
+              "type": "radio",
+              "options": ["has arrived", "have arrived", "had arrived"]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Vocabulary",
+          "content": "The manager asked the team to ________ the clearance process.",
+          "points": 3,
+          "inputs": [
+            {
+              "type": "radio",
+              "options": ["expedite", "expand", "extend"]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Grammar",
+          "content": "The invoice was ________ during transit.",
+          "points": 3,
+          "inputs": [
+            {
+              "type": "radio",
+              "options": ["lose", "lost", "loss"]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Grammar",
+          "content": "The company ________ in international logistics.",
+          "points": 3,
+          "inputs": [
+            {
+              "type": "radio",
+              "options": ["specializes", "specialize", "specialized"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OFFICE PRACTICE",
+      "points": 15,
+      "questions": [
+        {
+          "id": 5,
+          "title": "Communication Tools",
+          "content": "What are the common communication tools used in an office?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Client Handling",
+          "content": "How do you handle a client complaint?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "FERI Certificate",
+          "content": "What is a FERI certificate and why is it important?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "MATHEMATICS",
+      "points": 20,
+      "questions": [
+        {
+          "id": 8,
+          "title": "Arithmetic",
+          "content": "Find the value of: 52 - 42",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Speed Calculation",
+          "content": "A train travels 120km in 2 hours, then another 180km in 3 hours. What is the average speed?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Ratio",
+          "content": "If the ratio of men to women is 3:2 and there are 30 employees, how many are men?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Equation",
+          "content": "Solve: 3x + 4 = 19",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "COMMUNICATION SKILLS",
+      "points": 10,
+      "questions": [
+        {
+          "id": 12,
+          "title": "Email Writing",
+          "content": "Write an email responding to a client complaint.",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Conflict Handling",
+          "content": "A customer is angry about a FERI mistake. How do you handle it?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "GENERAL KNOWLEDGE",
+      "points": 15,
+      "questions": [
+        {
+          "id": 14,
+          "title": "Transport Modes",
+          "content": "What are the primary modes of transportation?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "title": "Clearing & Forwarding",
+          "content": "What is clearing and forwarding?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Border Entry Points",
+          "content": "Name border entry points shared between Zambia and DRC.",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

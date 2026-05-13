@@ -20,3 +20,9 @@ Route::post('/operations/quiz/submit', [OperationsQuizController::class, 'submit
 Route::get('/quiz/success', function () {
     return view('quiz.success');
 })->name('operations.quiz.success');
+
+Route::get('/it/quiz', [ItQuizController::class, 'show']);
+Route::post('/it/quiz/submit', [ItQuizController::class, 'submit'])->name('it.quiz.submit');
+Route::get('/quiz/success', function () {
+    return view('quiz.success');
+})->name('it.quiz.success');

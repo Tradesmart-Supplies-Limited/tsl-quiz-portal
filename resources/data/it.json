@@ -2,7 +2,7 @@
   "title": "Technical Evaluation - IT Department",
   "department": "it",
   "duration": "120",
-  "instructions": "Please answer the following questions to the best of your ability. This evaluation is designed to assess your technical knowledge, problem-solving ability, creativity, communication skills, and practical IT experience. For design or development tasks, upload your work publicly on Google Drive, GitHub, Behance, Figma, or any accessible platform and paste the public link in the answer field. Good luck!",
+  "instructions": "Please answer the following questions to the best of your ability. This evaluation is designed to assess your technical knowledge, problem-solving ability, creativity, communication skills, and practical IT experience. IMPORTANT: For practical development, website, and graphic design tasks, upload your work publicly on Google Drive, GitHub, Behance, Figma, Canva, Netlify, Vercel, or any accessible platform. Then create a text (.txt) file containing the links to your uploaded work clearly labeled according to the respective question numbers. Email the text file as an attachment to misc@tradesmartzm.com before submission.",
   "sections": [
     {
       "title": "ENGLISH LANGUAGE & COMMUNICATION",
@@ -224,7 +224,7 @@
         {
           "id": 18,
           "title": "Practical Development Task",
-          "content": "Create a simple responsive webpage for Tradesmart Supplies Limited that includes a homepage banner, company description, and contact section. Upload the project publicly (GitHub, Google Drive, Netlify, Vercel, etc.) and paste the accessible link below.",
+          "content": "Create a simple responsive webpage for Tradesmart Supplies Limited that includes a homepage banner, company description, and contact section. Upload the project publicly (GitHub, Google Drive, Netlify, Vercel, etc.). Include the public link in the text file and email it to misc@tradesmartzm.com.",
           "points": 10,
           "inputs": [
             {
@@ -252,7 +252,7 @@
         {
           "id": 20,
           "title": "Poster Design Task",
-          "content": "Design a professional promotional poster for Tradesmart Supplies Limited advertising an IT service or product. Upload the design publicly (Google Drive, Behance, Canva, Figma, etc.) and paste the public link below.",
+          "content": "Design a professional promotional poster for Tradesmart Supplies Limited advertising an IT service or product. Upload the design publicly (Google Drive, Behance, Canva, Figma, etc.). Include the public link in the text file and email it to misc@tradesmartzm.com.",
           "points": 10,
           "inputs": [
             {
@@ -263,7 +263,7 @@
         {
           "id": 21,
           "title": "Social Media Creativity",
-          "content": "Create a sample social media post design for Tradesmart Supplies Limited wishing African Freedom day. Upload the design publicly and paste the accessible link below.",
+          "content": "Create a sample social media post design for Tradesmart Supplies Limited promoting cybersecurity awareness. Upload the design publicly and include the accessible link in the text file emailed to misc@tradesmartzm.com.",
           "points": 5,
           "inputs": [
             {

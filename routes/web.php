@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\OperationsQuizController;
+use App\Http\Controllers\ItQuizController;
 
 Route::get('/', function () {
     return view('welcome');

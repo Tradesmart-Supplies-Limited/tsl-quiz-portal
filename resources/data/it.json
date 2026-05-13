@@ -1,71 +1,69 @@
 {
-  "title": "Technical Evaluation - Operations Department",
-  "department": "operations",
-  "duration": "90",
-  "instructions": "Please answer the following questions to the best of your ability.  Good luck!",
+  "title": "Technical Evaluation - IT Department",
+  "department": "it",
+  "duration": "120",
+  "instructions": "Please answer the following questions to the best of your ability. This evaluation is designed to assess your technical knowledge, problem-solving ability, creativity, communication skills, and practical IT experience. For design or development tasks, upload your work publicly on Google Drive, GitHub, Behance, Figma, or any accessible platform and paste the public link in the answer field. Good luck!",
   "sections": [
     {
-      "title": "ENGLISH LANGUAGE",
+      "title": "ENGLISH LANGUAGE & COMMUNICATION",
       "points": 15,
       "questions": [
         {
           "id": 1,
           "title": "Grammar",
-          "content": "The shipment ________ at the Port yesterday.",
+          "content": "The IT Officer ________ responsible for maintaining the company network.",
           "points": 3,
           "inputs": [
             {
               "type": "radio",
-              "options": ["has arrived", "have arrived", "had arrived"]
+              "options": ["is", "are", "were"]
             }
           ]
         },
         {
           "id": 2,
           "title": "Vocabulary",
-          "content": "The manager asked the team to ________ the clearance process.",
+          "content": "A firewall helps to ________ unauthorized access to a network.",
           "points": 3,
           "inputs": [
             {
               "type": "radio",
-              "options": ["expedite", "expand", "extend"]
+              "options": ["prevent", "promote", "replace"]
             }
           ]
         },
         {
           "id": 3,
-          "title": "Grammar",
-          "content": "The invoice was ________ during transit.",
-          "points": 3,
+          "title": "Professional Communication",
+          "content": "Write a short email responding to a staff member whose laptop cannot connect to the office Wi-Fi.",
+          "points": 4,
           "inputs": [
             {
-              "type": "radio",
-              "options": ["lose", "lost", "loss"]
+              "type": "paragraph"
             }
           ]
         },
         {
           "id": 4,
-          "title": "Grammar",
-          "content": "The company ________ in international logistics.",
-          "points": 3,
+          "title": "Customer Support",
+          "content": "How would you explain a technical issue to a non-technical staff member?",
+          "points": 5,
           "inputs": [
             {
-              "type": "radio",
-              "options": ["specializes", "specialize", "specialized"]
+              "type": "paragraph"
             }
           ]
         }
       ]
     },
     {
-      "title": "OFFICE PRACTICE",
-      "points": 15,
+      "title": "COMPUTER HARDWARE & TROUBLESHOOTING",
+      "points": 20,
       "questions": [
         {
           "id": 5,
-          "title": "Communication Tools",
-          "content": "What are the common communication tools used in an office?",
+          "title": "Troubleshooting",
+          "content": "A user reports that their computer powers on but displays a black screen. Explain the troubleshooting steps you would take.",
           "points": 5,
           "inputs": [
             {
@@ -75,8 +73,8 @@
         },
         {
           "id": 6,
-          "title": "Client Handling",
-          "content": "How do you handle a client complaint?",
+          "title": "Networking",
+          "content": "A laptop connects to Wi-Fi but has no internet access. What could be the possible causes and solutions?",
           "points": 5,
           "inputs": [
             {
@@ -86,8 +84,19 @@
         },
         {
           "id": 7,
-          "title": "FERI Certificate",
-          "content": "What is a FERI certificate and why is it important?",
+          "title": "Hardware Knowledge",
+          "content": "Name and explain the function of any four major computer hardware components.",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Preventative Maintenance",
+          "content": "What regular maintenance activities should be carried out on office computers and servers?",
           "points": 5,
           "inputs": [
             {
@@ -98,24 +107,13 @@
       ]
     },
     {
-      "title": "MATHEMATICS",
+      "title": "NETWORKING & SYSTEM ADMINISTRATION",
       "points": 20,
       "questions": [
         {
-          "id": 8,
-          "title": "Arithmetic",
-          "content": "Find the value of: 52 - 42",
-          "points": 5,
-          "inputs": [
-            {
-              "type": "paragraph"
-            }
-          ]
-        },
-        {
           "id": 9,
-          "title": "Speed Calculation",
-          "content": "A train travels 120km in 2 hours, then another 180km in 3 hours. What is the average speed?",
+          "title": "IP Addressing",
+          "content": "What is an IP address and why is it important in networking?",
           "points": 5,
           "inputs": [
             {
@@ -125,8 +123,8 @@
         },
         {
           "id": 10,
-          "title": "Ratio",
-          "content": "If the ratio of men to women is 3:2 and there are 30 employees, how many are men?",
+          "title": "Active Directory & User Management",
+          "content": "Explain the process of creating and managing user accounts in an organization.",
           "points": 5,
           "inputs": [
             {
@@ -136,25 +134,8 @@
         },
         {
           "id": 11,
-          "title": "Equation",
-          "content": "Solve: 3x + 4 = 19",
-          "points": 5,
-          "inputs": [
-            {
-              "type": "paragraph"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "COMMUNICATION SKILLS",
-      "points": 10,
-      "questions": [
-        {
-          "id": 12,
-          "title": "Email Writing",
-          "content": "Write an email responding to a client complaint.",
+          "title": "Data Backup",
+          "content": "Describe a good backup and disaster recovery strategy for a company.",
           "points": 5,
           "inputs": [
             {
@@ -163,9 +144,9 @@
           ]
         },
         {
-          "id": 13,
-          "title": "Conflict Handling",
-          "content": "A customer is angry about a FERI mistake. How do you handle it?",
+          "id": 12,
+          "title": "Server Monitoring",
+          "content": "What tools or methods can be used to monitor server performance, backups, and security?",
           "points": 5,
           "inputs": [
             {
@@ -176,13 +157,24 @@
       ]
     },
     {
-      "title": "GENERAL KNOWLEDGE",
+      "title": "CYBER SECURITY",
       "points": 15,
       "questions": [
         {
+          "id": 13,
+          "title": "Security Awareness",
+          "content": "What are phishing attacks and how can employees avoid them?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
           "id": 14,
-          "title": "Transport Modes",
-          "content": "What are the primary modes of transportation?",
+          "title": "Password Security",
+          "content": "What makes a strong password policy in an organization?",
           "points": 5,
           "inputs": [
             {
@@ -192,8 +184,25 @@
         },
         {
           "id": 15,
-          "title": "Clearing & Forwarding",
-          "content": "What is clearing and forwarding?",
+          "title": "Endpoint Protection",
+          "content": "List and explain three ways to secure company computers and data.",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WEBSITE MANAGEMENT & SOFTWARE DEVELOPMENT",
+      "points": 20,
+      "questions": [
+        {
+          "id": 16,
+          "title": "Website Management",
+          "content": "Describe the steps you would take to update and maintain a company website.",
           "points": 5,
           "inputs": [
             {
@@ -202,9 +211,120 @@
           ]
         },
         {
-          "id": 16,
-          "title": "Border Entry Points",
-          "content": "Name border entry points shared between Zambia and DRC.",
+          "id": 17,
+          "title": "Software Development",
+          "content": "What programming languages, frameworks, or technologies are you familiar with? Explain how you have used them.",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Practical Development Task",
+          "content": "Create a simple responsive webpage for Tradesmart Supplies Limited that includes a homepage banner, company description, and contact section. Upload the project publicly (GitHub, Google Drive, Netlify, Vercel, etc.) and paste the accessible link below.",
+          "points": 10,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "GRAPHIC DESIGN & DIGITAL MEDIA",
+      "points": 20,
+      "questions": [
+        {
+          "id": 19,
+          "title": "Graphic Design Knowledge",
+          "content": "Which graphic design tools have you used before and for what type of projects?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Poster Design Task",
+          "content": "Design a professional promotional poster for Tradesmart Supplies Limited advertising an IT service or product. Upload the design publicly (Google Drive, Behance, Canva, Figma, etc.) and paste the public link below.",
+          "points": 10,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "title": "Social Media Creativity",
+          "content": "Create a sample social media post design for Tradesmart Supplies Limited wishing African Freedom day. Upload the design publicly and paste the accessible link below.",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PRACTICAL SCENARIOS & PROBLEM SOLVING",
+      "points": 25,
+      "questions": [
+        {
+          "id": 22,
+          "title": "Office IT Support",
+          "content": "An employee accidentally deleted important company files. Explain the steps you would take to recover the files.",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "title": "Network Downtime",
+          "content": "The office internet suddenly stops working during business hours. Describe your troubleshooting process.",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "title": "System Upgrade",
+          "content": "How would you plan and execute a company-wide operating system upgrade with minimal downtime?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "title": "IT Policy",
+          "content": "What IT policies would you recommend for employees regarding email usage, passwords, and internet access?",
+          "points": 5,
+          "inputs": [
+            {
+              "type": "paragraph"
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "title": "Innovation & Improvement",
+          "content": "Suggest three ways technology can improve efficiency and productivity at Tradesmart Supplies Limited.",
           "points": 5,
           "inputs": [
             {
